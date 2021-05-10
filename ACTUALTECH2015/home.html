@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<div id='menu'>
+  <button id='flowermenuoption' onclick="flowerbutton()">Flowers</a>
+  <button id='photoshopmenuoption' onclick="photoshopbutton()">Photoshop Edits</a>
+  <button id='wildlifemenuoption' onclick="wildlifebutton()">Wildlife</a>
+
+</div>
+<div id='container'> </div>
+<div id='hamburgermenu'>
+  <img id='menuimg'src="img/Hamburger.png">
+</div>
+
+<section class="bio">
+
+
+  <h1 id="pagetitle">_g.l.o. Media</h1>
+  <img src="img/biopic.jpg" class="biopic">
+  <p> Hello! Welcome to my portfolio website! My name is Georgie and I currently study media production at DeMontfort University. Scroll down or use the menu in the top left to see my work. </p>
+</section>
+
+<section id="flowers">
+<h1>Flowers</h1>
+<div class="grid">
+<img class="flowerimgs"src="img/flowers/1.jpg">
+<img src="img/flowers/2.jpg">
+<img src="img/flowers/3.jpg">
+<img src="img/flowers/4.jpg">
+<img src="img/flowers/5.jpg">
+<img src="img/flowers/6.jpg">
+<img src="img/flowers/7.jpg">
+<img src="img/flowers/8.jpg">
+<img src="img/flowers/9.jpg">
+</div>
+
+
+<div id='yellowandpinkblend'></div>
+
+
+<section id='photoshopedits'>
+  <h1>Photoshop Edits</h1>
+
+<video controls>
+</video>
+</section>
+
+
+<div id='pinkandgreenblend'></div>
+
+<section id='wildlife'>
+  <h1>Wildlife</h1>
+
+
+  <img class="wildliferow1"src="img/wildlife/1.jpg">
+  <img class="wildliferow1"src="img/wildlife/2.png">
+  <img class="wildliferow1"src="img/wildlife/3.jpg">
+<img class="wildliferow2"src="img/wildlife/4.jpg">
+
+
+
+  <video width="100%" height="500" controls>
+<source src="videos/sloth.mp4" type="video/mp4">
+Your browser does not support the video.
+</video>
+
+
+
+</section>
+<script>
+/*Menu*/
+openMenu = () => {
+  document.getElementById('menu').style.left = '0';
+  document.getElementById('container').style.left = '0';
+}
+
+closeMenu = () => {
+  document.getElementById('menu').style.left = '-100%';
+  document.getElementById('container').style.left = '-100%';
+}
+
+document.getElementById('hamburgermenu').addEventListener('click', openMenu);
+document.getElementById('container').addEventListener('click', closeMenu);
+
+
+flowerbutton = () => {
+  let flower = document.getElementById("flowers");
+  flower.scrollIntoView();
+closeMenu()
+}
+
+photoshopbutton = () => {
+  let photoshop = document.getElementById("photoshopedits");
+  photoshop.scrollIntoView();
+  closeMenu()
+
+}
+
+wildlifebutton = () => {
+  let wildlife = document.getElementById("wildlife");
+  wildlife.scrollIntoView();
+  closeMenu()
+
+}
+
+</script>
+
+  </body>
+</html>

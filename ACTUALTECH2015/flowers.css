@@ -1,0 +1,60 @@
+html{
+  height: 700vh;
+}
+
+body{
+  margin: 0;
+     background-image: linear-gradient(#faea69 100vh, #faea69 200vh,#F3A69F 300vh,#F3A69F 500vh, #92F08D 600vh,#92F08D 700vh);
+}
+
+
+/* flowers page css*/
+
+.flowerspage{
+  display: block;
+background-color: #faea69
+  padding-top: 10%;
+  padding-bottom: 20%;
+  height:120vh;
+}
+
+.grid img{
+  height: auto;
+  width:300px;
+  padding: 1%;
+  opacity: 1;
+  transition: opacity 1s;
+
+
+}
+.grid{
+  padding: 1.5%;
+  height: 100vh;
+}
+
+h1{
+  display: block;
+  font-size: 120px;
+  text-align: center;
+  font-family: avenir;
+  font-weight: lighter;
+  margin: 0;
+}
+
+
+
+
+}
+
+#yellowandpinkblend{
+  display: block;
+  height:20vh;
+  width: 100%;
+  background-image: linear-gradient(#faea69,#F3A69F);
+}
+
+.drawingspage {
+height:300vh;
+background-color:#F3A69F;
+
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="drawings.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<nav id="menu">
+  <a class"menuitem" href="home.html"> Home </a>
+  <a class"menuitem" href="flowers.html"> Flowers </a>
+  <a class"menuitem" href="photoshopedits.html"> Photoshop Edits</a>
+  </nav>
+
+
+<div class='menubutton'>
+ <img id="hamburgermenu" src="img/Hamburger.png" onlick="menuappear">
+</div>
+
+
+<h1>Drawings</h1>
+<section class= 'grid'>
+
+
+</section>
+<script>
+
+menuappear () {
+document.getElementById('menu').style.left =0;
+}
+menuclose () {
+document.getElementById('menu').style.left=-100%
+}
+
+
+document.getElementById('hamburgermenu').addevetlistner('click',menuappear);
+
+document.getElementById('hamburgermenu').addevetlistner('click',menuclose);
+
+
+</script>
+  </body>
+
+</html>
